@@ -140,7 +140,7 @@ address {
 }
 .hero {
   width: 1600px;
-  margin: 0 auto 94px auto;
+  margin: 0 auto 0 auto;
   background-image: linear-gradient(rgba(47,48,58,.4),rgba(47,48,58,.4)), url(../images/img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -186,7 +186,7 @@ address {
 /* ------------------Hero end */
 /* ----------------Vertu start */
 .vertu{
-  margin: 0 0 94px;;
+  padding: 94px 0;
 }
 .vertu-list {
   display: flex;
