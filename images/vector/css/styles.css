@@ -1,0 +1,20 @@
+
+.icon{
+    /* display: block; */
+    width: 200px;
+    height: 150px;
+    /* fill: red; */
+    /* color:red;  */
+    /* currentColor; */
+    color:#757575;
+}
+
+.icon:hover{
+    color:red;
+    background-color: cyan;
+}
+
+.icon .glif{
+    /* fill: red; */
+    fill: currentColor;
+}
