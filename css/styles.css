@@ -582,7 +582,7 @@ address {
   color: #ffffff;
 
   /* transform: translateY(100%); */
-  /* transition: transform var(--cubic-t); */
+  transition: transform var(--cubic-t);
 }
 
 /* ----------------------End portfolio */
