@@ -305,7 +305,6 @@ address {
   height: 294px;
   background-color: #fff;
 }
-
 .moir-content {
   position: absolute;
   bottom: 0;
@@ -324,20 +323,6 @@ address {
 
   color: #ffffff;
 }
-/* text on the card
-
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-
-color: #FFFFFF;
-
-border: 1px solid #000000; */
 /*------------------End Directions */
 /*--------------------Start team */
 .team {
