@@ -552,7 +552,7 @@ address {
 }
 .portfolio-link {
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .portfolio-name {
   font-weight: bold;
@@ -584,7 +584,8 @@ address {
 
 .card-thumb {
   /* position: relative; */
-  height: 294px;
+  height: 297px;
+  border: 1px bold black;;
   overflow: hidden;
 }
 
