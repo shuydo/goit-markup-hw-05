@@ -577,14 +577,14 @@ address {
   opacity: 0;
 }
 
-.portfolio-link:hover .slide {
+.portfolio-link:hover .slide,
+.portfolio-link:focus .slide {
   transform: translateY(-100%);
 }
 
 .card-thumb {
   /* position: relative; */
   height: 294px;
-
   overflow: hidden;
 }
 
