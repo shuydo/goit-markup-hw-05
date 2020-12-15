@@ -299,45 +299,6 @@ address {
 .direction img {
   display: block;
 }
-.thumb {
-  position: relative;
-  /* display: block; */
-  height: 294px;
-  background-color: #fff;
-}
-
-.moir-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(47, 48, 58, 0.8);
-  padding: 27px;
-  /* font-family: Roboto; */
-  /* font-style: normal; */
-  font-weight: bold;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-/* text on the card
-
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-
-color: #FFFFFF;
-
-border: 1px solid #000000; */
 /*------------------End Directions */
 /*--------------------Start team */
 .team {
@@ -415,12 +376,10 @@ border: 1px solid #000000; */
 .soc-list-link:hover,
 .soc-list-link:focus {
   background-color: var(--accent-color);
-  transition: var(--cubic-t);
 }
 .soc-list-link:hover .soc-icon,
 .soc-list-link:focus .soc-icon {
   fill: #fff;
-  transition: var(--cubic-t);
 }
 /*----------------- End team */
 /*----------------- start Постоянные клиенты */
@@ -592,7 +551,7 @@ border: 1px solid #000000; */
   opacity: 0;
 }
 
-.portfolio-link:hover .slide {
+.portfolio-link:hover .slide{
   transform: translateY(-100%);
 }
 
@@ -616,7 +575,7 @@ border: 1px solid #000000; */
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: calc(28 / 18);
+  line-height: calc(28/18);
   /* or 156% */
   letter-spacing: 0.03em;
 
