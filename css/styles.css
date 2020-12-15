@@ -3,13 +3,13 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
-  --cubic-t: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: Roboto;
   font-style: normal; /*не ясно, почему нет у элемента 1st, в TDs*/
 }
-image {
+img {
   display: block;
 }
 h1,
@@ -98,7 +98,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  transition: color var(--cubic-t);
+  transition: color var(--t-cubic);
 
   /* outline: 1px solid red; */
 }
@@ -125,7 +125,7 @@ address {
   display: flex;
   align-items: center;
 
-  transition: color var(--cubic-t);
+  transition: color var(--t-cubic);
 }
 .envelope {
   margin-right: 10px;
@@ -136,7 +136,7 @@ address {
 .phone {
   display: flex;
 
-  transition: color var(--cubic-t);
+  transition: color var(--t-cubic);
 }
 .smartphone {
   margin-right: 10px;
@@ -220,7 +220,7 @@ address {
   border-radius: 4px;
   cursor: pointer;
 
-  transition: all var(--cubic-t);
+  transition: all var(--t-cubic);
 }
 /* ------------------Hero end */
 /* ----------------Vertu start */
@@ -367,11 +367,23 @@ address {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.social-links {
+.soc-links {
   display: flex;
   justify-content: space-between;
   width: 206px;
 }
+
+/* ----------------ul soc */
+.team .soc-links {
+  display: inline-flex;
+  margin: 0 0 30px 32px;
+  fill: #afb1b8;
+  border-radius: 50%;
+}
+.soc-list-link {
+  
+}
+/* .soc-list-link */
 .soc-list-link {
   display: flex;
   justify-content: center;
@@ -379,33 +391,29 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border-color: transparent;
+  /* background-color: #fff; */
+  /* border-color: transparent; */
+  /* transition: color var(--t-cubic); */
+   transition: background-color var(--t-cubic);
+
 }
 .soc-icon {
   width: 20px;
   height: 20px;
-  /* transition: color var(--cubic-t); */
-}
-/* ----------------ul soc */
-.team .social-links {
-  /* .team .social-list-link { */
-  display: inline-flex;
-  margin: 0 0 30px 32px;
   fill: #afb1b8;
-  border-radius: 50%;
-}
-.social-list-link {
-  /* transition: color var(--cubic-t); */
+  /* transition: color var(--t-cubic); */
+  transition: fill var(--t-cubic);
+
 }
 .soc-list-link:hover,
 .soc-list-link:focus {
   background-color: var(--accent-color);
-  transition: var(--cubic-t);
+  transition: var(--t-cubic);
 }
 .soc-list-link:hover .soc-icon,
 .soc-list-link:focus .soc-icon {
-  fill: #fff;
-  transition: var(--cubic-t);
+  fill:#fff;
+  transition: fill var(--t-cubic);
 }
 /*----------------- End team */
 /*----------------- start Постоянные клиенты */
@@ -441,7 +449,7 @@ address {
   padding: 20px 0;
   color: #afb1b8;
 
-  transition: color var(--cubic-t);
+  transition: color var(--t-cubic);
 }
 /* ----------------end Постоянные клиенты */
 /* ------------------start footer */
@@ -474,7 +482,7 @@ address {
   margin-top: 9px;
 }
 .map-address {
-  transition: color var(--cubic-t);
+  transition: color var(--t-cubic);
 }
 .join-box {
   width: 206px;
@@ -490,30 +498,21 @@ address {
   text-transform: uppercase;
   color: #ffffff;
 }
-/* .join-box  */
 .soc-list-link {
   background-color: rgba(255, 255, 255, 0.1);
-
-  /* transition: color var(--cubic-t); */
 }
-.join-box .social-links {
+.join-box .soc-links {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   fill: #afb1b8;
 }
-/* .join-box  */
-.soc-list-link:focus,
-.soc-list-link:hover {
-  background-color: var(--accent-color);
-}
-/*---------------------End footer */
-
-/*---------------------для Потрфолио---------------*/
+/*---------------------End footer--------------*/
+/* ============================================== */
+/*---------------------Потрфолио---------------*/
 .portfolio-hero .container {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* outline: 1px solid black; */
 }
 .filter-buttons {
   display: flex;
@@ -534,8 +533,6 @@ address {
 .portfolio-item {
   width: 370px;
   border: 1px solid #eeeeee;
-  /* outline: 1px solid tomato; */
-  /* border-radius: 4px; */
 }
 .portfolio-item:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -543,16 +540,20 @@ address {
 .portfolio-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-
-.portfolio-link:hover,
-.portfolio-link:focus {
-  /* outline: 3px solid tomato; */
+/* .portfolio-link:focus, */
+.portfolio-item:hover{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.portfolio-item:focus .card-thumb
+/* .portfolio-item:hover */
+{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-link {
   text-decoration: none;
-  /* display: inline-block; */
 }
 .portfolio-name {
   font-weight: bold;
@@ -571,26 +572,15 @@ address {
 .discription {
   padding: 20px 24px;
 }
-
-.portfolio-link:hover .card-thumb::before {
-  /* display: block; */
-  opacity: 0;
-}
-
-.portfolio-link:hover .slide,
-.portfolio-link:focus .slide {
+.portfolio-link:focus .slide,
+.portfolio-link:hover .slide {
   transform: translateY(-100%);
 }
-
 .card-thumb {
-  /* position: relative; */
-  height: 297px;
-  border: 1px bold black;;
+  height: 294px;
   overflow: hidden;
 }
-
 .slide {
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -598,20 +588,15 @@ address {
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
 
-  /* font-family: Roboto; */
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: calc(28 / 18);
-  /* or 156% */
   letter-spacing: 0.03em;
-
   color: #ffffff;
 
-  /* transform: translateY(100%); */
-  transition: transform var(--cubic-t);
+  transition: transform var(--t-cubic);
 }
-
 /* ----------------------End portfolio */
 /* -------------------BackDrop */
 .backdrop {
@@ -646,8 +631,6 @@ address {
   border-radius: 4px;
 
   transition: transform 500ms var(--cubic) 500ms;
-
-  /* outline: 1px solid tomato; */
 }
 
 .close-btn {
@@ -665,14 +648,10 @@ address {
   justify-content: center;
   align-items: center;
 
-  /* outline: 1px solid blue; */
 }
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-.cross {
-  /* outline: 1px solid blue; */
 }
 /* -------------------End BackDrop */
